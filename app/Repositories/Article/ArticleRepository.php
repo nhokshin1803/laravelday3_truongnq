@@ -13,6 +13,6 @@ class ArticleRepository extends BaseRepository implements ArticleRepositoryInter
 
     public function getArticle()
     {
-        return $this->model->select('article_name')->take(5)->get();
+        return $this->model->select('article_name')->take(1)->get();
     }
 }

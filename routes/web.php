@@ -33,3 +33,5 @@ Route::post('/upload', 'UserController@uploadAvatar');
 Route::get('/user', function () {
     return new UserResource(User::find(1));
 });
+
+Route::get('exception/index', 'ExceptionController@index');
